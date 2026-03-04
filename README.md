@@ -8,6 +8,8 @@ A collection of useful bash utility scripts for system administration and log ma
 
 A bash script that compresses and archives log directories with timestamps.
 
+**Project URL:** https://roadmap.sh/projects/log-archive-tool
+
 **Features:**
 - Timestamped archive file naming (YYYYMMDD_HHMMSS format)
 - Gzip compression for efficient storage
@@ -27,6 +29,8 @@ For more details, see [Log-Archive-Tool/README.md](Log-Archive-Tool/README.md)
 ### 2. [Server Performance Stats](Server-Performance-Stats/)
 
 A lightweight bash script for monitoring Linux server performance metrics in real-time.
+
+**Project URL:** https://roadmap.sh/projects/server-stats
 
 **Features:**
 - CPU usage monitoring
