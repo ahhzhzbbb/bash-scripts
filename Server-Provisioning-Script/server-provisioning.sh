@@ -75,7 +75,9 @@ if [[ "$?" -ne 0 ]]; then
 fi
 
 cd "$PROJECT_DIR"
-git clone "$1" > /dev/null
+if [[ ! -d "$PROJECT_NAME" ]]; then
+    git clone "$1" > /dev/null
+fi
 
 if [[ "$?" -ne 0 ]]; then
     echo "failed to clone the project"
@@ -83,6 +85,7 @@ if [[ "$?" -ne 0 ]]; then
 fi
 
 cd "$PROJECT_NAME"
+git pull
 #Step6: Start container
 echo "Starting containers..."
 
