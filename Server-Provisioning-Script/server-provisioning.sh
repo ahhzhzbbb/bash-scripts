@@ -29,7 +29,7 @@ fi
 
 #Step2: Install packages
 echo "Installing packages..."
-sudo apt install -y docker.io docker-compose-plugin nginx git ufw > /dev/null
+sudo apt install -y docker.io docker-compose-v2 nginx git ufw > /dev/null
 
 if [[ "$?" -ne 0 ]]; then
     echo "failed to install packages"
