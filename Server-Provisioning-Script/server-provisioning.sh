@@ -29,7 +29,7 @@ fi
 
 #Step2: Install packages
 echo "Installing packages..."
-sudo apt install -y docker.io docker-compose nginx git > /dev/null
+sudo apt install -y docker.io docker-compose nginx git ufw > /dev/null
 
 if [[ "$?" -ne 0 ]]; then
     echo "failed to install packages"
@@ -91,7 +91,7 @@ if [[ ! -f docker-compose.yml && ! -f compose.yaml ]]; then
     exit 1
 fi
 
-docker compose up -d
+docker-compose up -d
 
 if [[ "$?" -ne 0 ]]; then
     echo "failed to start container"
